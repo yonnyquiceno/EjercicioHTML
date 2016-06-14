@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <title> Registro</title>
+ <link rel="stylesheet" href="../style.css"> </link>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+</head>
+
+<body style="background-color:ligthgrey;">
+ <div class="container-fluid">
+  <div class="col-md-4">
+
+  </div>
+  <div class="col-md-4">
+
+   <form class="form-signin">
+    <center>
+     <table>
+      <tr>
+       <td colspan="2">
+
+        <h2 class="form-signin-heading"><center>Registrate</center></h2>
+        <input id="nombres" class="form-control" placeholder="nombres" required="true" type="text">
+        <input id="apellidos" class="form-control" placeholder="apellidos" required="true" type="text">
+        <input id="correo" class="form-control" placeholder="Correo electronico" required="" autofocus="" type="email">
+        <input id="peso" class="form-control" placeholder="Peso" required="" type="double">
+        <input id="edad" class="form-control" placeholder="Edad" required="" type="double">
+
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <label for="transporte">Medio de transporte</label>
+       </td>
+       <td>
+
+
+        <div class="checkbox">
+         <label>
+          <input type="checkbox" value="transporte1">Bicicleta</label>
+        </div>
+        <div class="checkbox">
+         <label>
+          <input type="checkbox" value="transporte2">Automovil</label>
+        </div>
+        <div class="checkbox">
+         <label>
+          <input type="checkbox" value="transporte3">Bus</label>
+        </div>
+        <div class="checkbox">
+         <label>
+          <input type="checkbox" value="transporte4">otro</label>
+        </div>
+
+       </td>
+
+       <tr>
+
+        <td>
+         <label for="transporte">Genero</label>
+        </td>
+        <td>
+         <div class="radio">
+
+          <label>
+           <input type="radio" name="sexo">Masculino
+           <br>
+          </label>
+
+          <label>
+           <input type="radio" name="sexo" checked>Femenino
+           <br>
+          </label>
+
+          <label>
+           <input type="radio" name="sexo">Indefinido</label>
+         </div>
+        </td>
+
+        </tr>
+
+
+       <td colspan="2">
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="window.open('perfilpersona.html')">Aceptar</button>
+        <label>
+         <input value="remember-me" type="checkbox"> Recuérdame
+        </label>
+       </td>
+      </tr>
+     </table>
+    </center>
+
+   </form>
+  </div>
+  <div class="col-md-4">
+
+  </div>
+ </div>
+
+
+
+
+
+
+
+
+ </div>
+</body>
+
+</html>

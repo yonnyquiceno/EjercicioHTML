@@ -1,8 +1,31 @@
-function contador() {
-    alert('it works madafaca')
+function funciona() {
+    alert('it works')
 };
 
+function sqrt(){
+var numero =prompt("ingrese número","")
+resultado=Math.pow(numero,(0.5))
+alert(resultado)
+}
 
+
+
+
+
+
+
+
+
+
+
+function añadiratabla(){
+  var table = document.getElementById('tablapersonas')
+  var row = table.insertRow(0)
+  var cell0 = row.insertCell(0)
+  var cell1 = row.insertCell(1)
+  cell0.innerHTML= document.getElementById('nombre').value
+  cell1.innerHTML= document.getElementById('apellido').value
+}
 
 function validate() {
     var username, password
@@ -21,30 +44,25 @@ function validate() {
 };
 
 
+var gente = [{nombres: 'rin rin',apellido: 'renacuajo'}, {nombres: 'azuca',apellido: 'morena'}];
+function listar(lista) {
 
-var gente = [{
-    nombres: 'rin rin',
-    apellido: 'renacuajo'
-}, {
-    nombres: 'rin rin',
-    apellido: 'renacuajo'
-}]
 
-function listar(lista, tablaid) {
 
-    var table = document.getElementById('tabla')
+    var table = document.getElementById('tablapersonas')
+    var boton = document.createElement("button")
+    boton.type = "btn-primary";
+
     for (var i = 0; i < gente.length; i++) {
+
+
         var row = table.insertRow(0)
-        var cell0 = row.instertCell(0)
-        var cell1 = row.instertCell(1)
-        cell0.innerHTML(gente[i].nombres)
-        cell1.innerHTML(gente[i].apellido)
+        var cell0 = row.insertCell(0)
+        var cell1 = row.insertCell(1)
+        var cell2= row.insertCell(2)
+        cell0.innerHTML=lista[i].nombres
+        cell1.innerHTML=lista[i].apellido
+        cell2.innnerHTML=boton
+
     }
 };
-
-
-
-
-}
-
-}

@@ -1,14 +1,3 @@
-function funciona() {
-    alert('it works')
-};
-
-function sqrt(){
-var numero =prompt("ingrese número","")
-resultado=Math.pow(numero,(0.5))
-alert(resultado)
-}
-
-
 $(document).ready(function(){
 
  $("input.form-control").on({ mouseenter:function(){ $("body").css("background-color", "white");},
@@ -28,12 +17,15 @@ $(document).ready(function(){
  });
 })
 
+function funciona() {
+    alert('it works')
+};
 
-
-
-
-
-
+function sqrt(){
+var numero =prompt("ingrese número","")
+resultado=Math.pow(numero,(0.5))
+alert(resultado)
+}
 
 
 function añadiratabla(){
@@ -64,16 +56,11 @@ function validate() {
 
 var gente = [{nombres: 'rin rin',apellido: 'renacuajo'}, {nombres: 'azuca',apellido: 'morena'}];
 function listar(lista) {
-
-
-
     var table = document.getElementById('tablapersonas')
     var boton = document.createElement("button")
     boton.type = "btn-primary";
 
     for (var i = 0; i < gente.length; i++) {
-
-
         var row = table.insertRow(0)
         var cell0 = row.insertCell(0)
         var cell1 = row.insertCell(1)

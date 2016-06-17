@@ -4,29 +4,31 @@
 <head>
  <meta charset="utf-8">
  <title> fomulario inicio de sesion</title>
- <script type="text/javascript" src="assets/scripts/scripts.js">
- </script>
+
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+ <script type="text/javascript" src="assets/scripts/scripts.js"> </script>
  <link rel="stylesheet" href="style.css"> </link>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
 
 
 </head>
 
-<body >
+<body style="background-color:rgb(217, 217, 217)">
 <div class="container-fluid">
 <div class="col-md-4">
 </div>
 <div class="col-md-4">
  <form class="form-signin">
   <h2 class="form-signin-heading">Por favor Inicia Sesión</h2>
-  <input id="inputEmail" class="form-control" placeholder="Correo electronico" required="" autofocus="" type="email" onblur="validate()">
-  <input id="inputPassword" class="form-control" placeholder="Contraseña" required="" type="password" onblur="validate()">
+  <input id="inputEmail" class="form-control" placeholder="Correo electronico" required="" autofocus="" type="email">
+  <input id="inputPassword" class="form-control" placeholder="Contraseña" required="" type="password">
   <div class="checkbox">
    <label>
     <input value="remember-me" type="checkbox"> Recuerdame
    </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="window.open('components/registro.html')">Entrar</button>
+  <button id="btniniciarsesion" class="btn btn-lg btn-primary btn-block" type="submit" >Entrar</button> <!-- onclick="window.open('components/registro.html')"-->
  </form>
 
 </div>

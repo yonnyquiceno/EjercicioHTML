@@ -9,6 +9,24 @@ alert(resultado)
 }
 
 
+$(document).ready(function(){
+
+ $("input.form-control").on({ mouseenter:function(){ $("body").css("background-color", "white");},
+ mouseleave: function(){$("body").css("background-color", "rgb(217, 217, 217)")},
+ });
+
+ $("#btniniciarsesion").click(function(){
+   var email, password
+   email = $('#inputEmail').val()
+   password = $('#inputPassword').val()
+
+   if ((email === undefined || email === '') || (password === undefined || password === '')) {
+     $(".form-control").css("borderColor", "red");
+   } else {
+     $('.form-control').css("borderColor", "green");
+   };
+ });
+})
 
 
 

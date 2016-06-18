@@ -1,13 +1,25 @@
 $(document).ready(function(){
 
+
+$(".form-control").mouseleave(function(){
+ var titulopost, contenidopost
+ titulopost = $('#titulopost').val()
+ contenidopost = $('#contenidopost').val()
+ if ((titulopost === undefined || titulopost === '') || (contenidopost === undefined || contenidopost === '')) {
+ $('#btnpostear').attr("disabled", true);
+ } else {
+ $('#btnpostear').attr("disabled", false);
+ }
+});
+
  $("input.form-control").on({ mouseenter:function(){ $("body").css("background-color", "white");},
  mouseleave: function(){$("body").css("background-color", "rgb(217, 217, 217)")},
- });
+});
 
- $("#btniniciarsesion").click(function(){
-   var email, password
-   email = $('#inputEmail').val()
-   password = $('#inputPassword').val()
+$("#btniniciarsesion").click(function(){
+  var email, password
+  email = $('#inputEmail').val()
+  password = $('#inputPassword').val()
 
    if ((email === undefined || email === '') || (password === undefined || password === '')) {
      $(".form-control").css("borderColor", "red");
@@ -15,7 +27,44 @@ $(document).ready(function(){
      $('.form-control').css("borderColor", "green");
    };
  });
+
 })
+
+/*function postear() {
+  var frm = $("#formulario-postear")
+  var datosformateados = frm.serializeArray()
+  var datos = {}
+  datos.title = datosformateados[0].value
+  datos.body = datosformateados[1].value
+  $.post("http://jsonplaceholder.typicode.com/posts", datos)
+  .done(function(data) {
+    console.log(data)
+    alert("Nuevo Post creado: ")
+  })
+  .error(function(data) {
+    alert("Error al crear post")
+  })
+};*/
+
+function savePost() {
+  var frm = $("#post-form")
+  var formattedData = frm.serializeArray()
+  var data = {}
+  data.title = formattedData[0].value
+  data.body = formattedData[1].value
+  $.post( "http://jsonplaceholder.typicode.com/posts", data)
+  .done(function(data) {
+    console.log(data)
+    alert("Nuevo Post creado: ")
+  })
+  .error(function(data) {
+    console.log(data)
+    alert("Error al crear post")
+  })
+};
+
+
+
 
 function funciona() {
     alert('it works')

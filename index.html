@@ -4,12 +4,17 @@
 <head>
  <meta charset="utf-8">
  <title> fomulario inicio de sesion</title>
+
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+ <script type="text/javascript" src="assets/scripts/scripts.js"> </script>
  <link rel="stylesheet" href="style.css"> </link>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
 
+
 </head>
 
-<body >
+<body style="background-color:rgb(217, 217, 217)">
 <div class="container-fluid">
 <div class="col-md-4">
 </div>
@@ -23,56 +28,13 @@
     <input value="remember-me" type="checkbox"> Recuerdame
    </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="window.open('components/registro.html')">Entrar</button>
+  <button id="btniniciarsesion" class="btn btn-lg btn-primary btn-block" type="submit" >Entrar</button> <!-- onclick="window.open('components/registro.html')"-->
  </form>
 
 </div>
-<div class="col-md-4">
+<div class="col-md-4"><div>
+ <h1 id="error" ></h1>
 </div>
-
-<!-- <center>
-
-  <h1 class="gradientelineal">
-   Inicia sesión
-  </h1>
-
-  <form class="form1">
-   <table border="0" style="width:50%, align:center">
-
-    <tr>
-     <td>
-      <label for="username">Nombre de usuario</label>
-     </td>
-     <td>
-      <input type="text" name="username">
-      <br>
-     </td>
-    </tr>
-
-    <tr>
-
-     <td>
-      <label for="password">contraseña</label>
-     </td>
-     <td>
-      <input type="password" name="lname">
-      <br>
-     </td>
-
-    </tr>
-
-    <tr>
-     <td  colspan="2">
-      <button type="submit" value="iniciar sesion"  onclick="window.open('components/registro.html')">Iniciar Sesión</button>
-      <button type="reset" value="cancelar">Cancelar</button>
-     </td>
-    </tr>
-
-   </table>
-
-
-  </form>
- </center>-->
 
 
 </body>

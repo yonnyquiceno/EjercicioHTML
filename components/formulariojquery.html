@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+ <title> formulariojqueryajax</title>
+
+ <link rel="stylesheet" href="../style.css"> </link>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+ <script type="text/javascript" src="../assets/scripts/scripts.js"></script>
+</head>
+
+<body style="background-color:ligthgrey;">
+
+
+<form id="post-form">
+<div class="row">
+ <div class="col-md-6">
+  <h1>Titulo del post</h1>
+  <input id="titulopost" type="text" name="title" class="form-control"></input>
+ </div>
+</div>
+<div class="row">
+ <div class="col-md-6">
+  <h1>contenido del post</h1>
+    <textarea form="post-form" name="body" id="contenidopost" rows="4" cols="22" class="form-control"></textarea>
+ </div>
+</div>
+<div class="row">
+ <div class="col-md-6">
+  <button id="btnpostear" class="button" onclick="savePost()">Postear</button>
+ </div>
+</div>
+
+
+</body>
+</html>

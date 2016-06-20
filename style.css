@@ -1,3 +1,12 @@
+
+/*declaracion de fuentes*/
+@import url(https://fonts.googleapis.com/css?family=Caveat+Brush);
+
+.fuente-caveat-brush{
+ font-family: 'Caveat Brush',cursive;
+}
+
+
 h1 {
  color:#8B081C;
  font-family:sans-serif;

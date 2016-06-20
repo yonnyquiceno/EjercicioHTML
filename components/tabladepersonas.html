@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <title> tabla de personas</title>
+ <link rel="stylesheet" href="../style.css"> </link>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+ <script type="text/javascript" src="../assets/scripts/scripts.js"></script>
+</head>
+
+<body style="background-color:ligthgrey;">
+ <div style="container-fluid"
+
+<div class="centrado separar">
+
+ <input id="nombre" class="form-control" placeholder="nombres" type="text"  >
+ <input id="apellido" class="form-control" placeholder="apellidos" type="text" >
+
+
+ <button class="btn btn_adaptar separar" onclick="listar(gente)">Listar</button>
+  <button class="btn btn_adaptar separar" onclick="añadiratabla()">añadir</button>
+
+
+
+  <table class="centrado separar" border="1px" id="tablapersonas">
+   <tr>
+    <td>
+
+    </td>
+    <td>
+
+    </td>
+    <td>
+       <button class="btn btn_adaptar separar" onclick="borrarfila()">borrar</button>
+    </td>
+   </tr>
+  </table>
+
+
+
+</div>
+
+
+<div>
+ <center>
+
+   <button class="btn btn_adaptar separar centrado" onclick="window.open(tabladepersonas.html)">abrir siguiente pagina</button>
+ </center>
+</div>
+
+</div>
+</body>

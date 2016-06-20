@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
 
@@ -28,43 +30,44 @@ $("#btniniciarsesion").click(function(){
    };
  });
 
-})
+});
 
-/*function postear() {
+function postear() {
   var frm = $("#formulario-postear")
   var datosformateados = frm.serializeArray()
-  var datos = {}
-  datos.title = datosformateados[0].value
-  datos.body = datosformateados[1].value
-  $.post("http://jsonplaceholder.typicode.com/posts", datos)
-  .done(function(data) {
-    console.log(data)
-    alert("Nuevo Post creado: ")
-  })
-  .error(function(data) {
-    alert("Error al crear post")
-  })
-};*/
-
-function savePost() {
-  var frm = $("#post-form")
-  var formattedData = frm.serializeArray()
   var data = {}
-  data.title = formattedData[0].value
-  data.body = formattedData[1].value
-  $.post( "http://jsonplaceholder.typicode.com/posts", data)
+  data.title = datosformateados[0].value
+  data.body = datosformateados[1].value
+  debugger
+  $.post("http://jsonplaceholder.typicode.com/posts", data)
   .done(function(data) {
     console.log(data)
     alert("Nuevo Post creado: ")
   })
   .error(function(data) {
-    console.log(data)
     alert("Error al crear post")
   })
 };
 
+function postearAlternativa() {
+  var frm = $("#formulario-postear")
+  var datosformateados= frm.serializeArray()
+  var data = {}
+  data.title = datosformateados[0].value
+  data.body = datosformateados[1].value
 
+  $.ajax('http://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',data
+  })
+  .done(function(data) {
+    console.log(data)
+    alert("Nuevo Post creado: ")
+  })
+  .error(function(data) {
+    alert("Error al crear post")
+  })
 
+}
 
 function funciona() {
     alert('it works')
@@ -74,7 +77,7 @@ function sqrt(){
 var numero =prompt("ingrese número","")
 resultado=Math.pow(numero,(0.5))
 alert(resultado)
-}
+};
 
 
 function añadiratabla(){
@@ -84,7 +87,7 @@ function añadiratabla(){
   var cell1 = row.insertCell(1)
   cell0.innerHTML= document.getElementById('nombre').value
   cell1.innerHTML= document.getElementById('apellido').value
-}
+};
 
 function validate() {
     var username, password

@@ -14,24 +14,26 @@
 <body style="background-color:ligthgrey;">
 
 
-<form id="post-form">
-<div class="row">
- <div class="col-md-6">
-  <h1>Titulo del post</h1>
-  <input id="titulopost" type="text" name="title" class="form-control"></input>
- </div>
-</div>
-<div class="row">
- <div class="col-md-6">
-  <h1>contenido del post</h1>
-    <textarea form="post-form" name="body" id="contenidopost" rows="4" cols="22" class="form-control"></textarea>
- </div>
-</div>
-<div class="row">
- <div class="col-md-6">
-  <button id="btnpostear" class="button" onclick="savePost()">Postear</button>
- </div>
-</div>
+  <form id="formulario-postear">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Titulo del post</h1>
+        <input id="titulopost" type="text" name="title" class="form-control"></input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>contenido del post</h1>
+        <textarea form="formulario-postear" name="body" id="contenidopost" rows="4" cols="22" class="form-control"></textarea>
+      </div>
+    </div>
+  </form>
+    <div class="row">
+      <div class="col-md-6">
+        <button id="btnpostear" class="button" onclick="postear()">Postear</button>
+      </div>
+    </div>
+
 
 
 </body>
